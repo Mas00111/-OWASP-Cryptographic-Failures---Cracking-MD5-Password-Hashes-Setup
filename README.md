@@ -10,6 +10,7 @@ This lab demonstrates how attackers exploit weak hashing using dictionary attack
 
 
 **Lab Setup**
+
 Target: Damn Vulnerable Web Application
 Environment: Ubuntu (Apache, PHP, MySQL)
 DVWA Security Level: Low
@@ -25,6 +26,7 @@ Extract password hashes via SQL Injection and crack them to reveal plaintext pas
 
 
 **Exploitation Steps**
+
 1. Extract Password Hashes
 
 Navigate to DVWA SQL Injection module and input:
@@ -43,12 +45,13 @@ password hashes
 3. Save Hashes
    Hashes.txt
 
-5. Crack Hashes with Hashcat
+4. Crack Hashes with Hashcat
    hashcat -m 0 -a 0 hashes.txt /usr/share/wordlists/rockyou.txt
 
 
 
 **Impact**
+
 Weak hashing allows attackers to recover passwords quickly
 Compromised credentials can lead to:
 Account takeover
