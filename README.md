@@ -12,9 +12,13 @@ This lab demonstrates how attackers exploit weak hashing using dictionary attack
 **Lab Setup**
 
 Target: Damn Vulnerable Web Application
+
 Environment: Ubuntu (Apache, PHP, MySQL)
+
 DVWA Security Level: Low
+
 Attacker Machine: Kali Linux
+
 Tools:
 Hashcat
 rockyou.txt
@@ -66,7 +70,10 @@ To secure password storage:
 Use strong hashing algorithms:
 bcrypt
 Argon2
+
 Apply:
 Unique salts per user
+
 Slow hashing (cost factor)
+
 Password complexity policies
